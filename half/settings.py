@@ -60,7 +60,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'halfdb',
-        'USER': 'postgres'
+        'USER': 'postgres',
+        'PASSWORD': 'memory00'
     }
 }
 
