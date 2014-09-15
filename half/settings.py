@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'half.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'jacksongs',
+        'NAME': 'root',
     }
 }
 
