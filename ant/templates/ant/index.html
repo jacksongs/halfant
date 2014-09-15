@@ -1,2 +1,4 @@
-<img src="{{ STATIC_URL }}img.jpg" />
+{% load staticfiles %}
+<img src="{% static "img.jpg" %}"/>
 <p>{{ STATIC_URL }}</p>
+<p>"{% static "img.jpg" %}"</p>
