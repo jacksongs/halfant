@@ -1,0 +1,7 @@
+<div ng-repeat="post in posts">
+  <h1>{{ post.title }}</h1>
+  <p>{{ post.text }}</p>
+  <p>{{ post.player }}</p>
+  <a href="#/posts/{{ post.$id }}">comments</a>
+  <button ng-click="deletePost(post)" class="btn btn-default">delete</button>
+</div>
