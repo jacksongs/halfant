@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['107.170.246.225']
 
 
 # Application definition
