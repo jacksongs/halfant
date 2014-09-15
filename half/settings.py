@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['107.170.246.225']
+ALLOWED_HOSTS = ['107.170.246.225','127.0.0.1']
 
 
 # Application definition
@@ -98,6 +98,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/root/halfant/half/ant/static'
+STATIC_ROOT = '/root/halfant/half/ant/static/'
 
 
