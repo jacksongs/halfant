@@ -1,0 +1,8 @@
+
+production.py
+
+production.pyc
+
+*.pyc
+
+half/settings.pyc
