@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['107.170.246.225','127.0.0.1']
+ALLOWED_HOSTS = ['107.170.246.225','127.0.0.1','.raker.co']
 
 
 # Application definition
