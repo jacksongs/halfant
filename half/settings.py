@@ -95,9 +95,9 @@ USE_L10N = True
 USE_TZ = True
 
 
-STATIC_ROOT = '/static/'
+STATIC_ROOT = '/app/'
 
-STATIC_URL = '/static/'
+STATIC_URL = '/app/'
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
