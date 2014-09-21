@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['107.170.246.225','127.0.0.1','.raker.co']
+ALLOWED_HOSTS = ['107.170.246.225','127.0.0.1','.raker.co','0.0.0.0']
 
 
 # Application definition
@@ -104,7 +104,10 @@ REST_FRAMEWORK = {
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
+    ],
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONPRenderer',
+    )
 }
 
 
