@@ -2,3 +2,5 @@
 production.py
 
 *.pyc
+
+/ant/static/

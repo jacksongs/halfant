@@ -28,6 +28,7 @@ ALLOWED_HOSTS = ['107.170.246.225','127.0.0.1','.raker.co','0.0.0.0']
 # Application definition
 
 INSTALLED_APPS = (
+    'suit',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,6 +56,8 @@ WSGI_APPLICATION = 'half.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
+
+STATIC_ROOT = '/root/halfant/app/static/'
 
 from production import *
 
@@ -95,7 +98,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-STATIC_ROOT = '/root/halfant/app/static/'
+
 
 STATIC_URL = '/static/'
 
@@ -111,4 +114,9 @@ REST_FRAMEWORK = {
     )
 }
 
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
+
+TEMPLATE_CONTEXT_PROCESSORS = TCP + (
+    'django.core.context_processors.request',
+)
 
