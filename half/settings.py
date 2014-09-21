@@ -95,9 +95,9 @@ USE_L10N = True
 USE_TZ = True
 
 
-STATIC_ROOT = '/app/'
+STATIC_ROOT = '/root/halfant/app/'
 
-STATIC_URL = '/app/'
+STATIC_URL = '/'
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
